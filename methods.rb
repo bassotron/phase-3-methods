@@ -1,40 +1,29 @@
 def greet_programmer
-	puts "Hello, programmer!"
+  puts 'Hello, programmer!'
 end
 
-
-def greet name
-	puts "Hello, #{name}!"
+def greet(name)
+  puts "Hello, #{name}!"
 end
 
-
-def greet_with_default name
-     if name == "Naureen"
-		 puts "Hello, #{name}!"
-	 elsif name == "Jimmy"
-		puts "Hello, #{name}!"
-	 else greet_with_default nil
-		puts "Hello, programmer!"
-	end
-	
-end 
-
-
-
-def add num1, num2
-	return num1 + num2
+def greet_with_default(name)
+  case name 
+  when name == "Naureen"
+  puts "Hello, #{name}!"
+  when name == "Jimmy"
+  puts "Hello, #{name}!"
+  else puts "Hello, programmer!"
+  end
 end
 
+def add(num1, num2)
+  num1 + num2
+end
 
-
-
-def halve number
-	if number != Integer
+def halve(number)
+  if number != integer
 	nil
-	elsif number == number
-	return	number / 2
-	end
-
+  else
+	number / 2
+  end
 end
-
-
